@@ -28,6 +28,10 @@
             src: url(./fonts/Montserrat-Bold.ttf);
         }
 
+        .container {
+            margin: 0 auto;
+        }
+
         .logo {
             max-width: 100%;
             text-align: center;
@@ -37,6 +41,11 @@
         .banner img {
             width: 100%;
             height: 100%;
+        }
+
+        .upgrade-txt
+        {
+            word-wrap: break-word;
         }
 
         .upgrade-txt h5 {
@@ -57,9 +66,11 @@
         }
 
         .upgrade-txt p {
+            width: 580px;
+            flex-wrap: wrap;
             color: #000;
             line-height: 24px;
-            margin: 22px 0px;
+            margin: 22px auto;
         }
 
         .upgrade-container {
@@ -119,6 +130,7 @@
             color: #575757;
             font-family: 'Poppins-Bold';
             font-size: 14px;
+            margin: 0px 10px;
         }
 
         .copyright {
@@ -128,6 +140,19 @@
             margin-top: 16px;
             margin-bottom: 29px;
             /* margin: 0 auto; */
+        }
+
+        @media (max-width: 900px){
+            .footer-menu {
+                display: flex;  
+                justify-content: space-between;
+                width: 46%;
+                margin: auto;
+            }
+
+            .footer-menu h5 {
+                margin: 0px 10px;
+            }
         }
 
         @media (max-width: 767px){
@@ -143,6 +168,17 @@
             }
         }
 
+        @media (max-width: 660px){
+            .upgrade-txt
+            {
+                margin: 22px 46px;
+            }
+
+            .upgrade-txt p {
+                width: auto;
+            }
+        }
+
         @media (max-width: 575px){
             .footer-menu {
                 display: flex;  
@@ -155,41 +191,56 @@
                 margin: 0px 10px;
             }
         }
+
+        @media (max-width: 400px){
+            .footer-menu {
+                display: flex;  
+                justify-content: space-between;
+                width: 76%;
+                margin: auto;
+            }
+
+            .footer-menu h5 {
+                margin: 0px 10px;
+            }
+        }
     </style>
 
 </head>
 <body>
-    <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-    </div>
-    <div class="banner">
-        <img src="images/banner.png" alt="Banner">
-    </div>
-    <div class="upgrade-txt">
-        <h5>Upgrade today and save an extra 10% off any plan!</h5>
-        <button>Upgrade Now</button>
-        <p>To prove how convinced we are that you'll love becoming an Archivist. <br> We've got a special discount just for you. Enjoy 10% off on any of the <br> upgrade plan.</p>
-    </div>
-    <div class="upgrade-container">
-        <h4>Don't miss out!</h4>
-        <h5>Offer available for 7 days</h5>
-        <div class="upgrade-btn">
-            <button>Upgrade Now</button>
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
         </div>
-    </div>
-    <div class="team">
-        <h5>Regards,</h5>
-        <h5>Archoral Team</h5>
-    </div>
-    <hr class="devider">
-    <div class="footer-menu" >
-        <h5>Home</h5>
-        <h5>About Us</h5>
-        <h5>Tools</h5>
-        <h5>Contact Us</h5>
-    </div>
-    <div class="copyright">
-        <p>Copyright 2024 @ Archoral LLC</p>
+        <div class="banner">
+            <img src="images/banner.png" alt="Banner">
+        </div>
+        <div class="upgrade-txt">
+            <h5>Upgrade today and save an extra 10% off any plan!</h5>
+            <button>Upgrade Now</button>
+            <p>To prove how convinced we are that you'll love becoming an Archivist. We've got a special discount just for you. Enjoy 10% off on any of the upgrade plan.</p>
+        </div>
+        <div class="upgrade-container">
+            <h4>Don't miss out!</h4>
+            <h5>Offer available for 7 days</h5>
+            <div class="upgrade-btn">
+                <button>Upgrade Now</button>
+            </div>
+        </div>
+        <div class="team">
+            <h5>Regards,</h5>
+            <h5>Archoral Team</h5>
+        </div>
+        <hr class="devider">
+        <div class="footer-menu" >
+            <h5>Home</h5>
+            <h5>About Us</h5>
+            <h5>Tools</h5>
+            <h5>Contact Us</h5>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 @ Archoral LLC</p>
+        </div>
     </div>
 </body>
 </html>
