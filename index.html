@@ -55,7 +55,8 @@
             font-family: 'Poppins-Bold';
         }
 
-        .upgrade-txt button {
+        .upgrade-txt a {
+            text-decoration: none;
             background: #027AAE;
             border: none;
             padding: 8px 16px;
@@ -96,8 +97,9 @@
             margin-bottom: 19px;
         }
 
-        .upgrade-container button {
+        .upgrade-container a {
             background: #027AAE;
+            text-decoration: none;
             border: none;
             padding: 8px 16px;
             border-radius: 9px;
@@ -129,7 +131,8 @@
             margin: auto;
         }
 
-        .footer-menu h5 {
+        .footer-menu a {
+            text-decoration: none;
             color: #575757;
             font-family: 'Poppins-Bold';
             font-size: 14px;
@@ -145,15 +148,41 @@
             /* margin: 0 auto; */
         }
 
+        @media (max-width: 1034px){
+            .footer-menu {
+                display: flex;  
+                justify-content: space-between;
+                width: 36%;
+                margin: auto;
+            }
+
+            .footer-menu a {
+                margin: 0px 10px;
+            }
+        }
+
         @media (max-width: 900px){
             .footer-menu {
                 display: flex;  
                 justify-content: space-between;
-                width: 46%;
+                width: 42%;
                 margin: auto;
             }
 
-            .footer-menu h5 {
+            .footer-menu a {
+                margin: 0px 10px;
+            }
+        }
+
+        @media (max-width: 837px){
+            .footer-menu {
+                display: flex;  
+                justify-content: space-between;
+                width: 54%;
+                margin: auto;
+            }
+
+            .footer-menu a {
                 margin: 0px 10px;
             }
         }
@@ -162,11 +191,11 @@
             .footer-menu {
                 display: flex;  
                 justify-content: space-between;
-                width: 46%;
+                width: 56%;
                 margin: auto;
             }
 
-            .footer-menu h5 {
+            .footer-menu a {
                 margin: 0px 10px;
             }
         }
@@ -190,7 +219,7 @@
                 margin: auto;
             }
 
-            .footer-menu h5 {
+            .footer-menu a {
                 margin: 0px 10px;
             }
         }
@@ -199,11 +228,24 @@
             .footer-menu {
                 display: flex;  
                 justify-content: space-between;
-                width: 76%;
+                width: 100%;
                 margin: auto;
             }
 
-            .footer-menu h5 {
+            .footer-menu a {
+                margin: 0px 10px;
+            }
+        }
+
+        @media (max-width: 280px){
+            .footer-menu {
+                display: flex;  
+                justify-content: space-between;
+                width: 100%;
+                margin: auto;
+            }
+
+            .footer-menu a {
                 margin: 0px 10px;
             }
         }
@@ -220,14 +262,14 @@
         </div>
         <div class="upgrade-txt">
             <h5>Upgrade today and save an extra 10% off any plan!</h5>
-            <button>Upgrade Now</button>
+            <a href="#">Upgrade Now</a>
             <p>To prove how convinced we are that you'll love becoming an Archivist. We've got a special discount just for you. Enjoy 10% off on any of the upgrade plan.</p>
         </div>
         <div class="upgrade-container">
             <h4>Don't miss out!</h4>
             <h5>Offer available for 7 days</h5>
             <div class="upgrade-btn">
-                <button>Upgrade Now</button>
+                <a href="#">Upgrade Now</a>
             </div>
         </div>
         <div class="team">
@@ -236,10 +278,10 @@
         </div>
         <hr class="devider">
         <div class="footer-menu" >
-            <h5>Home</h5>
-            <h5>About Us</h5>
-            <h5>Tools</h5>
-            <h5>Contact Us</h5>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Tools</a>
+            <a href="#">Contact Us</a>
         </div>
         <div class="copyright">
             <p>Copyright 2024 @ Archoral LLC</p>
